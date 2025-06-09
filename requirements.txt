@@ -1,0 +1,4 @@
+# Dependencias principales
+pillow==10.2.0  # Para manejo de imágenes|
+
+# Nota: tkinter viene incluido con Python, no necesita instalación separada 
