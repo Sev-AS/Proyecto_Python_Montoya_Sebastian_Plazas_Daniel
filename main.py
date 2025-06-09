@@ -11,12 +11,8 @@ def main():
     try:
         root = tk.Tk()
         root.title("Lotería Virtual - El Hueso")
-        root.geometry("700x900")  # Vertical format
+        root.state('zoomed')  # Maximiza la ventana
         root.configure(bg='#F8F9FA')
-        
-        # Set theme
-        root.tk.call('source', 'azure.tcl')
-        root.tk.call('set_theme', 'dark')
         
         MainWindow(root)
         

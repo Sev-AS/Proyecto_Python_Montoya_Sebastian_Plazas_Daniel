@@ -51,8 +51,7 @@ loteria-virtual/
 │   ├── gui/              # Componentes de interfaz
 │   ├── logic/            # Lógica de negocio
 │   └── data/             # Manejo de datos
-├── assets/               # Recursos estáticos
-│   └── images/          # Imágenes de la aplicación
-└── theme/               # Temas y estilos
+└── assets/               # Recursos estáticos
+    └── images/          # Imágenes de la aplicación
 ```
 
