@@ -13,14 +13,14 @@ Lotería Virtual es una aplicación de escritorio que simula un juego de loterí
 - Tabla de premios
 
 ## Requisitos
-- Python 3.8 o superior
+- Python
 - Tkinter (incluido en Python)
 - Pillow (PIL)
 
 ## Instalación
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/Sev-AS
+git clone https://github.com/Sev-AS/Python
 ```
 
 2. Instalar dependencias:
