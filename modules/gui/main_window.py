@@ -327,6 +327,8 @@ class MainWindow:
         """Elimina todo el historial de sorteos"""
         if messagebox.askyesno("Confirmar", "¿Está seguro que desea eliminar todo el historial?"):
             self.history_manager.limpiar_historial()
+            self.actualizar_historial()
+            self.actualizar_estadisticas()
             self.actualizar_premios()
 
     def configurar_tab_estadisticas(self) -> None:
@@ -404,7 +406,9 @@ class MainWindow:
             return
 
         self.boletos_comprados = []
+        self.sistema_boletos.boletos_comprados = []
         self.actualizar_lista_boletos()
+        self.sistema_boletos.actualizar_lista_visual()
         self.boton_jugar.config(state='disabled')
 
     def jugar(self) -> None:
