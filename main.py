@@ -11,9 +11,8 @@ def main():
     try:
         root = tk.Tk()
         root.title("Lotería Virtual - El Hueso")
-        root.state('zoomed')  # Maximiza la ventana
+        root.state('zoomed') 
         root.configure(bg='#F8F9FA')
-        
         MainWindow(root)
         
         root.mainloop()

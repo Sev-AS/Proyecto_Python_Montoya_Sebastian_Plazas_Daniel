@@ -217,7 +217,7 @@ class MainWindow:
                 textvariable=self.num_juegos_var,
                 width=10,
                 font=('Arial', 12),
-                fg='white',
+                fg='black',
                 justify='center').pack(side=tk.LEFT, padx=5)
         
         # Entrada para número de boletos por juego
@@ -231,7 +231,7 @@ class MainWindow:
                 textvariable=self.num_boletos_sim_var,
                 width=10,
                 font=('Arial', 12),
-                fg='white',
+                fg='black',
                 justify='center').pack(side=tk.LEFT, padx=5)
         
         # Botón de simulación
@@ -327,8 +327,6 @@ class MainWindow:
         """Elimina todo el historial de sorteos"""
         if messagebox.askyesno("Confirmar", "¿Está seguro que desea eliminar todo el historial?"):
             self.history_manager.limpiar_historial()
-            self.actualizar_historial()
-            self.actualizar_estadisticas()
             self.actualizar_premios()
 
     def configurar_tab_estadisticas(self) -> None:
@@ -349,16 +347,6 @@ class MainWindow:
         self.texto_estadisticas.pack(fill='both', expand=True)
         scrollbar.config(command=self.texto_estadisticas.yview)
         
-        # Botón de actualizar
-        tk.Button(self.tab_estadisticas,
-                 text="Actualizar Estadísticas",
-                 command=self.actualizar_estadisticas,
-                 font=('Arial', 12, 'bold'),
-                 bg='#6B7280',
-                 fg='white',
-                 padx=15,
-                 pady=5).pack(pady=5)
-
     def configurar_tab_premios(self) -> None:
         """Configura el contenido de la pestaña de premios"""
         # Área de texto con scroll
